@@ -1,0 +1,51 @@
+html {
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  margin-inline: 5%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 90%;
+}
+
+p {
+  color: #344563;
+}
+
+.headline {
+  padding: 10% 5% 5%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/header-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.headline-text {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.sub-heading {
+  color: #7f8cff;
+  font-weight: bolder;
+}
+
+.social-icon {
+  height: 20px;
+  width: 20px;
+  margin-right: 20px;
+}
+
+.heading-color { color: #172b4d; }
+
+.dark-purple { color: #6070ff; }
+
+.blank-space { height: 50px; }
