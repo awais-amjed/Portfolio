@@ -120,11 +120,18 @@ h1 {
   background-color: white;
 }
 
-.button:hover:not([disabled]) {
+.button:enabled:hover {
   border-color: #7f8cff;
   background-color: #7f8cff;
   color: white;
   box-shadow: 4px 4px rgba(127,140,255,0.25);
+}
+
+.button:focus:hover {
+  border-color: #2230d2;
+  background-color: #2230d2;
+  color: white;
+  outline: none;
 }
 
 .button:focus {
@@ -136,6 +143,48 @@ h1 {
 
 .button:disabled {
   color: #5e6c84;
+}
+
+.about-section {
+  border-top-right-radius: 15%;
+  background-color: white;
+  margin-top: 100px;
+  padding: 15% 5% 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-heading {
+  padding-inline: 10px;
+  display: flex;
+  font-weight: bolder;
+  font-size: 20px;
+  color: #172b4d;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+i {
+  margin-inline: 10px;
+}
+
+ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  display: flex;
+  padding: 5px 20px 5px;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  font-weight: bolder;
+  margin-block: 8px;
+}
+
+li img {
+  margin-right: 15px;
 }
 
 .heading-color { color: #172b4d; }
