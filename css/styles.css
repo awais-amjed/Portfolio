@@ -87,7 +87,9 @@ h1 {
 }
 
 .tags-section {
+  list-style-type: none;
   display: flex;
+  flex-direction: row;
 }
 
 .tag {
