@@ -60,7 +60,7 @@ h1 {
 .card {
   padding: 5%;
   margin: 5%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 16px;
   display: flex;
@@ -70,7 +70,7 @@ h1 {
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .project-details {
@@ -120,20 +120,6 @@ h1 {
   background-color: white;
 }
 
-.button:enabled:hover {
-  border-color: #7f8cff;
-  background-color: #7f8cff;
-  color: white;
-  box-shadow: 4px 4px rgba(127,140,255,0.25);
-}
-
-.button:focus:hover {
-  border-color: #2230d2;
-  background-color: #2230d2;
-  color: white;
-  outline: none;
-}
-
 .button:focus {
   border-color: #2230d2;
   background-color: #2230d2;
@@ -143,6 +129,20 @@ h1 {
 
 .button:disabled {
   color: #5e6c84;
+}
+
+.button:enabled:hover {
+  border-color: #7f8cff;
+  background-color: #7f8cff;
+  color: white;
+  box-shadow: 4px 4px rgba(127, 140, 255, 0.25);
+}
+
+.button:focus:hover {
+  border-color: #2230d2;
+  background-color: #2230d2;
+  color: white;
+  outline: none;
 }
 
 .about-section {
