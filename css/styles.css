@@ -17,6 +17,14 @@ nav {
   background-color: white;
 }
 
+nav a {
+  text-decoration: none;
+}
+
+nav a:link, nav a:visited, nav a:hover, nav a:active {
+  color: #6070ff;
+}
+
 p {
   color: #344563;
 }
