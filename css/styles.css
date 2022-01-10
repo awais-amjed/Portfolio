@@ -97,12 +97,6 @@ h1 {
   color: #7a869a;
 }
 
-.tags-section {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-}
-
 .tag {
   border-radius: 8px;
   font-size: 12px;
@@ -110,6 +104,7 @@ h1 {
   color: #6070ff;
   background-color: #ebebff;
   margin-right: 10px;
+  float: left;
 }
 
 .alignment-start {
