@@ -219,6 +219,23 @@ li img {
   text-align: center;
 }
 
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+#contact-form input, #contact-form textarea {
+  padding: 15px;
+  font-size: 17px;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+}
+
+#contact-form textarea 
+
 .heading-color { color: #172b4d; }
 
 .project-details-color { color: #7a869a; }
