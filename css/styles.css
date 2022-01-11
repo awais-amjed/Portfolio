@@ -244,7 +244,8 @@ li img {
   margin-top: 40px;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 15px;
   font-size: 17px;
   border: 1px solid #cfd8dc;
@@ -252,15 +253,17 @@ input, textarea {
   color: #172b4d;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: none;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: #b3bac5;
 }
 
-.contact-form .button {
+.contact-form input.button {
   align-self: start;
 }
 
