@@ -210,7 +210,7 @@ li img {
   align-items: center;
   background-image: url(../images/contact-form-background.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: right;
 }
 
 .contact-section h1,
