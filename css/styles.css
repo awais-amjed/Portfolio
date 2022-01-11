@@ -200,7 +200,7 @@ li img {
   margin-right: 15px;
 }
 
-.contact-form {
+.contact-section {
   border-top-left-radius: 15%;
   background-color: #6070ff;
   margin-top: 100px;
@@ -213,8 +213,8 @@ li img {
   background-size: cover;
 }
 
-.contact-form h1,
-.contact-form p {
+.contact-section h1,
+.contact-section p {
   color: white;
   text-align: center;
 }
