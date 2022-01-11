@@ -37,7 +37,7 @@ h1 {
 }
 
 .headline {
-  border-bottom-left-radius: 15%;
+  border-bottom-left-radius: 80px;
   background-color: white;
   margin-bottom: 100px;
   padding: 15% 5% 20%;
@@ -159,7 +159,7 @@ h1 {
 }
 
 .about-section {
-  border-top-right-radius: 15%;
+  border-top-right-radius: 80px;
   background-color: white;
   margin-top: 100px;
   padding: 15% 5% 15%;
@@ -201,7 +201,7 @@ li img {
 }
 
 .contact-section {
-  border-top-left-radius: 15%;
+  border-top-left-radius: 80px;
   background-color: #6070ff;
   margin-top: 100px;
   padding: 15% 5% 15%;
