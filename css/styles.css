@@ -230,7 +230,7 @@ li img {
   margin-top: 40px;
 }
 
-.contact-form input, .contact-form textarea {
+input, textarea {
   padding: 15px;
   font-size: 17px;
   border: 1px solid #cfd8dc;
