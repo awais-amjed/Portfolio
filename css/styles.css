@@ -235,8 +235,16 @@ li img {
   color: #172b4d;
 }
 
-input:focus {
+input:focus, textarea:focus {
   outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #b3bac5;
+}
+
+.contact-form .button {
+  align-self: start;
 }
 
 .heading-color { color: #172b4d; }
