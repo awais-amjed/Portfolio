@@ -1,4 +1,4 @@
-html {
+* {
   font-family: Poppins, sans-serif;
 }
 
@@ -219,7 +219,7 @@ li img {
   text-align: center;
 }
 
-#contact-form {
+.contact-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -227,14 +227,17 @@ li img {
   margin-top: 40px;
 }
 
-#contact-form input, #contact-form textarea {
+.contact-form input, .contact-form textarea {
   padding: 15px;
   font-size: 17px;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
+  color: #172b4d;
 }
 
-#contact-form textarea 
+input:focus {
+  outline: none;
+}
 
 .heading-color { color: #172b4d; }
 
