@@ -21,6 +21,7 @@ nav {
   width: 90%;
   background-color: white;
   height: 60px;
+  z-index: 9;
 }
 
 a {
