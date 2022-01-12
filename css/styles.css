@@ -267,16 +267,12 @@ ul {
 
 li {
   display: flex;
-  padding: 5px 20px 5px;
+  padding: 12px;
   background-color: whitesmoke;
   border-radius: 8px;
   font-weight: bolder;
-  gap: 8px;
+  gap: 16px;
   align-items: center;
-}
-
-li img {
-  margin-right: 15px;
 }
 
 .white-background {
@@ -409,4 +405,23 @@ textarea::placeholder {
     height: 72px;
   }
 
+  h1 {
+    font-size: 48px;
+  }
+
+  .headline p {
+    font-size: 20px;
+  }
+
+  .contact-section p {
+    font-size: 18px;
+  }
+
+  .card {
+    font-size: 16px;
+  }
+
+  .project-details {
+    font-size: 18px;
+  }
 }
