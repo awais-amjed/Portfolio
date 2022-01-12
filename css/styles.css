@@ -40,6 +40,24 @@ nav a:active {
   color: #6070ff;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+li {
+  display: flex;
+  padding: 12px;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  font-weight: bolder;
+  gap: 16px;
+  align-items: center;
+}
+
 nav ul {
   gap: 8px;
 }
@@ -257,24 +275,6 @@ i {
   margin-inline: 10px;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-}
-
-li {
-  display: flex;
-  padding: 12px;
-  background-color: whitesmoke;
-  border-radius: 8px;
-  font-weight: bolder;
-  gap: 16px;
-  align-items: center;
-}
-
 .white-background {
   background-color: white;
 }
@@ -333,7 +333,7 @@ textarea::placeholder {
   color: #b3bac5;
 }
 
-.contact-form .button {
+.contact-form input .button {
   align-self: start;
 }
 
@@ -348,6 +348,7 @@ textarea::placeholder {
     flex-direction: row;
     gap: 24px;
     padding: 24px;
+    font-size: 16px;
   }
 
   .project-description {
@@ -415,10 +416,6 @@ textarea::placeholder {
 
   .contact-section p {
     font-size: 18px;
-  }
-
-  .card {
-    font-size: 16px;
   }
 
   .project-details {
