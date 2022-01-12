@@ -197,6 +197,11 @@ h3 {
   color: #6070ff;
   background-color: #ebebff;
   font-weight: 500;
+  transition-duration: .3s;
+}
+
+.tag:hover {
+  transform: rotate(-15deg);
 }
 
 .alignment-start {
