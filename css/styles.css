@@ -190,12 +190,26 @@ h3 {
   background-color: white;
   padding: 114px 5%;
   display: flex;
-  gap: 20px;
+  gap: 60px;
   flex-direction: column;
 }
 
+.about-myself {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-basis: 50%;
+}
+
+.languages-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-basis: 50%;
+}
+
 .list-heading {
-  padding-inline: 10px;
+  padding: 10px;
   display: flex;
   font-weight: bolder;
   font-size: 20px;
@@ -209,8 +223,10 @@ i {
 }
 
 ul {
+  margin: 0;
   padding: 0;
   display: flex;
+  gap: 20px;
   flex-direction: column;
 }
 
@@ -220,7 +236,8 @@ li {
   background-color: whitesmoke;
   border-radius: 8px;
   font-weight: bolder;
-  margin-block: 8px;
+  gap: 8px;
+  align-items: center;
 }
 
 li img {
@@ -311,5 +328,18 @@ textarea::placeholder {
 
   .headline {
     padding: 0 20%;
+  }
+
+  .about-section {
+    flex-direction: row;
+  }
+
+  ul {
+    flex-direction: row;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: start;
   }
 }
