@@ -148,7 +148,7 @@ h3 {
   font-size: 17px;
   color: #6070ff;
   font-weight: 500;
-  padding: 15px 10px 15px;
+  padding: 12px;
   border-radius: 8px;
   border-style: solid;
   cursor: pointer;
@@ -302,7 +302,7 @@ textarea::placeholder {
   color: #b3bac5;
 }
 
-.contact-form input.button {
+.contact-form .button {
   align-self: start;
 }
 
@@ -335,6 +335,7 @@ textarea::placeholder {
   }
 
   .about-section {
+    padding: 142px 10%;
     flex-direction: row;
   }
 
@@ -353,5 +354,9 @@ textarea::placeholder {
 
   .width-constraint-container {
     padding-inline: 20%;
+  }
+
+  .contact-form .button {
+    align-self: center;
   }
 }
