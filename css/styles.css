@@ -9,12 +9,14 @@ body {
 }
 
 nav {
-  padding-inline: 5%;
+  padding-inline: 7%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   width: 90%;
   background-color: white;
+  height: 60px;
 }
 
 nav a {
@@ -26,6 +28,39 @@ nav a:visited,
 nav a:hover,
 nav a:active {
   color: #6070ff;
+}
+
+.desktop-menu a:active,
+.desktop-menu a:visited {
+  color: #344563;
+}
+
+.desktop-menu a:hover,
+.desktop-menu a:link {
+  color: #6070ff;
+}
+
+nav ul {
+  gap: 8px;
+}
+
+nav li {
+  font-weight: 500;
+  background-color: transparent;
+  font-size: 15px;
+}
+
+.logo {
+  color: #6070ff;
+  font-size: 18px;
+}
+
+.mobile-menu {
+  display: block;
+}
+
+.desktop-menu {
+  display: none;
 }
 
 p {
@@ -52,7 +87,7 @@ h3 {
   min-height: 100vh;
   border-bottom-left-radius: 80px;
   background-color: white;
-  padding: 0 5%;
+  padding: 0 7%;
   display: flex;
   gap: 20px;
   flex-direction: column;
@@ -188,7 +223,7 @@ h3 {
 .about-section {
   border-top-right-radius: 80px;
   background-color: white;
-  padding: 114px 5%;
+  padding: 114px 7%;
   display: flex;
   gap: 60px;
   flex-direction: column;
@@ -251,7 +286,7 @@ li img {
 .contact-section {
   border-top-left-radius: 80px;
   background-color: #6070ff;
-  padding: 114px 5% 50px;
+  padding: 114px 7% 50px;
   background-image: url(../images/contact-form-background.svg);
   background-repeat: no-repeat;
   background-position: right;
@@ -310,8 +345,6 @@ textarea::placeholder {
 
 .project-details-color { color: #7a869a; }
 
-.dark-purple { color: #6070ff; }
-
 .blank-space { height: 50px; }
 
 @media (min-width: 800px) {
@@ -359,4 +392,21 @@ textarea::placeholder {
   .contact-form .button {
     align-self: center;
   }
+
+  .desktop-menu {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  nav {
+    height: 72px;
+  }
+
+  .blank-space {
+    height: 72px;
+  }
+
 }
