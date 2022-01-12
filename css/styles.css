@@ -224,6 +224,10 @@ h3 {
   color: #5e6c84;
 }
 
+.contact-form .button {
+  align-self: start;
+}
+
 .button:enabled:hover {
   border-color: #7f8cff;
   background-color: #7f8cff;
@@ -331,10 +335,6 @@ textarea:focus {
 input::placeholder,
 textarea::placeholder {
   color: #b3bac5;
-}
-
-.contact-form input .button {
-  align-self: start;
 }
 
 .heading-color { color: #172b4d; }
