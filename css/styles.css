@@ -77,14 +77,14 @@ h3 {
 }
 
 .card {
-  padding: 5%;
+  padding: 16px;
   margin: 5%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 16px;
   display: flex;
+  gap: 16px;
   flex-direction: column;
-  gap: 20px;
   background-color: white;
   font-size: 15px;
 }
@@ -93,8 +93,22 @@ h3 {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+.project-image {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.project-description {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .project-details {
   display: flex;
+  flex-wrap: wrap;
   font-weight: 600;
   align-items: center;
   font-size: 13px;
@@ -110,6 +124,7 @@ h3 {
   margin: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   gap: 10px;
 }
@@ -275,3 +290,20 @@ textarea::placeholder {
 .dark-purple { color: #6070ff; }
 
 .blank-space { height: 50px; }
+
+@media (min-width: 600px) {
+  .card {
+    flex-direction: row;
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .project-description {
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .card:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+}
