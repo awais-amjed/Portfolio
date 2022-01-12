@@ -343,7 +343,7 @@ textarea::placeholder {
 
 .blank-space { height: 50px; }
 
-@media (min-width: 800px) {
+@media (min-width: 992px) {
   .card {
     flex-direction: row;
     gap: 24px;
