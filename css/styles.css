@@ -24,6 +24,23 @@ nav {
   z-index: 9;
 }
 
+nav > * {
+  animation-duration: 1s;
+  animation-name: navBarSlideDown;
+}
+
+@keyframes navBarSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -118,6 +135,66 @@ h3 {
   background-image: url(../images/header-background-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.headline h1 {
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name: headlineSlideInLeft;
+  animation-timing-function: ease-out;
+}
+
+@keyframes headlineSlideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.headline > p {
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name: headlineSlideInBottom;
+  animation-timing-function: ease-out;
+}
+
+.headline > a {
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name: headlineSlideInBottom;
+  animation-timing-function: ease-out;
+}
+
+.headline > div {
+  animation-duration: 1.5s;
+  animation-delay: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name: headlineSlideInBottom;
+  animation-timing-function: ease-out;
+}
+
+@keyframes headlineSlideInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .sub-heading {
