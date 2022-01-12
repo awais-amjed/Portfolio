@@ -158,18 +158,18 @@ h3 {
   }
 }
 
-.headline > p {
+.headline .lets-connect {
   animation-duration: 1.5s;
-  animation-delay: 1s;
+  animation-delay: 1.5s;
   opacity: 0;
   animation-fill-mode: forwards;
   animation-name: headlineSlideInBottom;
   animation-timing-function: ease-out;
 }
 
-.headline > a {
+.headline > p {
   animation-duration: 1.5s;
-  animation-delay: 1.5s;
+  animation-delay: 1s;
   opacity: 0;
   animation-fill-mode: forwards;
   animation-name: headlineSlideInBottom;
@@ -274,7 +274,7 @@ h3 {
   color: #6070ff;
   background-color: #ebebff;
   font-weight: 500;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 
 .tag:hover {
@@ -331,17 +331,21 @@ h3 {
   0% {
     transform: translateX(-5px) rotate(-5deg);
   }
+
   5% {
     transform: translateX(10px) rotate(5deg);
   }
+
   10% {
     transform: translateX(-5px) rotate(-5deg);
   }
+
   15% {
-    transform: translateX(0px);
+    transform: translateX(0);
   }
+
   100% {
-    transform: translateX(0px);
+    transform: translateX(0);
   }
 }
 
