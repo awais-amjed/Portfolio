@@ -389,6 +389,12 @@ h3 {
   justify-content: space-between;
 }
 
+.list-heading h3 {
+  color: #344563;
+  margin: 0;
+  font-size: 20px;
+}
+
 i {
   margin-inline: 10px;
 }
