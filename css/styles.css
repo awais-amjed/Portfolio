@@ -198,7 +198,7 @@ h3 {
 }
 
 .sub-heading {
-  color: #7f8cff;
+  color: #636dc7;
   font-weight: bolder;
 }
 
@@ -255,7 +255,7 @@ h3 {
 .dot {
   margin-inline: 20px;
   font-size: 10px;
-  color: #7a869a;
+  color: #6b7687;
 }
 
 .tags-section {
@@ -271,7 +271,7 @@ h3 {
   border-radius: 8px;
   font-size: 12px;
   padding: 4px 12px 4px;
-  color: #6070ff;
+  color: #505dd5;
   background-color: #ebebff;
   font-weight: 500;
   transition-duration: 0.3s;
@@ -287,7 +287,7 @@ h3 {
 
 .button {
   font-size: 17px;
-  color: #6070ff;
+  color: #5867eb;
   font-weight: 500;
   padding: 12px;
   border-radius: 8px;
@@ -389,6 +389,12 @@ h3 {
   justify-content: space-between;
 }
 
+.list-heading h3 {
+  color: #344563;
+  margin: 0;
+  font-size: 20px;
+}
+
 i {
   margin-inline: 10px;
 }
@@ -399,7 +405,7 @@ i {
 
 .contact-section {
   border-top-left-radius: 80px;
-  background-color: #6070ff;
+  background-color: #5867eb;
   padding: 114px 7% 50px;
   background-image: url(../images/contact-form-background.svg);
   background-repeat: no-repeat;
@@ -453,7 +459,7 @@ textarea::placeholder {
 
 .heading-color { color: #172b4d; }
 
-.project-details-color { color: #7a869a; }
+.project-details-color { color: #6b7687; }
 
 .blank-space { height: 50px; }
 
