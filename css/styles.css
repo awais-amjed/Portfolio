@@ -95,6 +95,10 @@ nav li {
   font-size: 18px;
 }
 
+.mobile-menu {
+  transition: 1s;
+}
+
 .mobile-nav-bar {
   display: block;
 }
