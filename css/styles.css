@@ -95,8 +95,49 @@ nav li {
   font-size: 18px;
 }
 
-.mobile-menu {
+.mobile-nav-bar {
   display: block;
+}
+
+.mobile-menu-content {
+  padding: 12px;
+  z-index: 11;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+  font-size: 32px;
+}
+
+.mobile-menu-content ul {
+  gap: unset;
+}
+
+.mobile-menu-content li {
+  background-color: unset;
+  font-weight: 600;
+  padding: 0;
+}
+
+#close-button {
+  align-self: end;
+}
+
+.mobile-menu-content a:link,
+.mobile-menu-content a:visited,
+.mobile-menu-content a:hover,
+.mobile-menu-content a:active {
+  color: white;
+  padding: 16px;
+}
+
+.blended-background {
+  z-index: 10;
+  background-color: #6070ff;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(8px);
+  position: fixed;
+  inset: 0;
 }
 
 .desktop-menu {
@@ -514,7 +555,7 @@ textarea::placeholder {
     display: block;
   }
 
-  .mobile-menu {
+  .mobile-nav-bar {
     display: none;
   }
 

@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CZ62YVL3TG"></script>
     <script>
@@ -11,8 +12,7 @@
 
       gtag('config', 'G-CZ62YVL3TG');
     </script>
-    
-    <meta charset="UTF-8">
+
     <title>Awais Amjed - Professional Portfolio</title>
     <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap' rel='stylesheet'>
     <link rel="stylesheet" href="css/styles.css">
@@ -21,19 +21,32 @@
 </head>
 
 <body>
-    <nav>
-        <h3 class="logo"><a href="#">My Logo</a></h3>
-        <div class="desktop-menu">
-            <ul>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+    <header>
+        <nav>
+            <h3 class="logo"><a href="#">My Logo</a></h3>
+            <div class="desktop-menu">
+                <ul>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="mobile-nav-bar">
+                <a href="#"><img src="images/icon-menu.svg" alt="menu-icon"></a>
+            </div>
+        </nav>
         <div class="mobile-menu">
-            <a href="#"><img src="images/icon-menu.svg" alt="menu-icon"></a>
+            <div class="blended-background"></div>
+            <div class="mobile-menu-content">
+                <a href="" id="close-button"><i class="fas fa-times"></i></a>
+                <ul>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-    </nav>
+    </header>
     <div class="blank-space"></div>
 
     <section class="headline">
