@@ -96,7 +96,7 @@ nav li {
 }
 
 .mobile-menu {
-  transition: 1s;
+  display: none;
 }
 
 .mobile-nav-bar {
