@@ -3,18 +3,18 @@ const linksInMobileMenu = document.querySelectorAll('.mobile-menu-content li a')
 const openButton = document.getElementById('open-button');
 const closeButton = document.getElementById('close-button');
 
-openButton.addEventListener('click', (event)=> {
+openButton.addEventListener('click', (event) => {
   event.preventDefault();
-  mobileMenu.style.display = "block"
-})
+  mobileMenu.style.display = 'block';
+});
 
-closeButton.addEventListener('click', (event)=> {
+closeButton.addEventListener('click', (event) => {
   event.preventDefault();
-  mobileMenu.style.display = "none"
-})
+  mobileMenu.style.display = 'none';
+});
 
-linksInMobileMenu.forEach(link => {
-  link.addEventListener('click', (event)=> {
-    mobileMenu.style.display = "none"
-  })
+linksInMobileMenu.forEach((link) => {
+  link.addEventListener('click', () => {
+    mobileMenu.style.display = 'none';
+  });
 });
