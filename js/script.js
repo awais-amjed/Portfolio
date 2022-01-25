@@ -130,6 +130,7 @@ works.forEach((work) => {
         'click', (event) => {
           event.preventDefault();
           document.getElementById('popup-window').innerHTML = '';
+          document.body.style.overflow = 'auto';
         },
       );
     },
