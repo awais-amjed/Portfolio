@@ -63,7 +63,7 @@ works.forEach((work) => {
 
   worksSection.innerHTML += `<div class="card">
   <div class="project-image">
-      <img src="${work.imageURL}" alt="Work 1 Screenshot">
+      <img src="${work.imageURL}" alt="${work.name} Screenshot">
   </div>
   <div class="project-description">
       <h3>${work.name}</h3>
@@ -78,8 +78,58 @@ works.forEach((work) => {
       <ul class="tags-section">
           ${techs}  
       </ul>
-      <input class="alignment-start button" type="button" value="See Project">
+      <input class="alignment-start button" type="button" value="See Project" id="${work.name}">
   </div>
 </div>
 `;
+});
+
+works.forEach((work) => {
+  let techs = '';
+
+  work.technologies.forEach((tech) => { techs += `<li class="tag">${tech}</li>`; });
+
+  document.getElementById(work.name).addEventListener(
+    'click', () => {
+      document.getElementById('popup-window').innerHTML
+        += `<div class="blended-background"></div>
+        <div class="popup-window-content">
+            <div class="card">
+                <div class="project-title">
+                    <div>
+                        <h3>${work.name}</h3>
+                        <div class="project-details">
+                            <p>FACEBOOK</p>
+                            <p class="dot">&#x2B24;</p>
+                            <p class="project-details-color">Full Stack Dev</p>
+                            <p class="dot">&#x2B24;</p>
+                            <p class="project-details-color">2015</p>
+                        </div>
+                    </div>
+                    <a href="" id="popup-close-button"><i class="fas fa-times"></i></a>
+                </div>
+                <img src="${work.imageURL}" alt="Work 4 Screenshot">
+                <div class="project-description">
+                    <p>${work.description}</p>
+                    <div class="description-wrapper">
+                        <ul class="tags-section">
+                            ${techs}
+                        </ul>
+                        <div class="button-wrapper">
+                            <a href="${work.liveURL}" class="alignment-start button">See Live <i class="fas fa-link"></i></a>
+                            <a href="${work.sourceURL}" class="alignment-start button">See Source <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>`;
+
+      document.getElementById('popup-close-button').addEventListener(
+        'click', (event) => {
+          event.preventDefault();
+          document.getElementById('popup-window').innerHTML = '';
+        },
+      );
+    },
+  );
 });

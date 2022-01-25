@@ -337,6 +337,7 @@ h3 {
   padding: 12px;
   border-radius: 8px;
   border-style: solid;
+  border-width: 1px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -509,7 +510,6 @@ textarea::placeholder {
 .blank-space { height: 50px; }
 
 #popup-window {
-  display: none;
   max-height: 100vh;
 }
 
