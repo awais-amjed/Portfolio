@@ -509,6 +509,7 @@ textarea::placeholder {
 .blank-space { height: 50px; }
 
 #popup-window {
+  display: none;
   max-height: 100vh;
 }
 
