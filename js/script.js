@@ -53,3 +53,33 @@ const works = [
     sourceURL: 'https://github.com/awais-amjed/',
   },
 ];
+
+const worksSection = document.getElementById('portfolio');
+
+works.forEach((work) => {
+  let techs = '';
+
+  work.technologies.forEach((tech) => { techs += `<li class="tag">${tech}</li>`; });
+
+  worksSection.innerHTML += `<div class="card">
+  <div class="project-image">
+      <img src="${work.imageURL}" alt="Work 1 Screenshot">
+  </div>
+  <div class="project-description">
+      <h3>${work.name}</h3>
+      <div class="project-details">
+          <p>CANOPY</p>
+          <p class="dot">&#x2B24;</p>
+          <p class="project-details-color">Back End Dev</p>
+          <p class="dot">&#x2B24;</p>
+          <p class="project-details-color">2015</p>
+      </div>
+      <p>${work.description}</p>
+      <ul class="tags-section">
+          ${techs}  
+      </ul>
+      <input class="alignment-start button" type="button" value="See Project">
+  </div>
+</div>
+`;
+});
