@@ -527,6 +527,8 @@ textarea::placeholder {
 
 .popup-window-content .card {
   overflow-y: auto;
+  margin: 0 5%;
+  max-height: 90vh;
 }
 
 .popup-window-content img {
