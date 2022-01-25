@@ -91,6 +91,8 @@ works.forEach((work) => {
 
   document.getElementById(work.name).addEventListener(
     'click', () => {
+      document.body.style.overflow = 'hidden';
+
       document.getElementById('popup-window').innerHTML
         += `<div class="blended-background"></div>
         <div class="popup-window-content">
