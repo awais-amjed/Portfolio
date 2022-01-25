@@ -295,10 +295,10 @@ h3 {
   font-weight: 600;
   align-items: center;
   font-size: 13px;
+  gap: 12px;
 }
 
 .dot {
-  margin-inline: 20px;
   font-size: 10px;
   color: #6b7687;
 }
@@ -508,6 +508,53 @@ textarea::placeholder {
 
 .blank-space { height: 50px; }
 
+#popup-window {
+  max-height: 100vh;
+}
+
+.popup-window-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  position: fixed;
+  inset: 0;
+  bottom: unset;
+  height: 100vh;
+}
+
+.popup-window-content .card {
+  overflow-y: auto;
+}
+
+.popup-window-content img {
+  max-height: 40vh;
+  object-fit: cover;
+}
+
+#popup-window .blended-background {
+  background-color: #c1c7d0;
+}
+
+.project-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.description-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.button-wrapper {
+  display: flex;
+  gap: 12px;
+}
+
 @media (min-width: 992px) {
   .card {
     flex-direction: row;
@@ -585,5 +632,14 @@ textarea::placeholder {
 
   .project-details {
     font-size: 18px;
+  }
+
+  .popup-window-content .card {
+    flex-direction: column;
+  }
+
+  .popup-window-content .project-description {
+    padding: 0;
+    flex-direction: row;
   }
 }
