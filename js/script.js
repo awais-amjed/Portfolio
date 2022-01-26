@@ -136,3 +136,23 @@ works.forEach((work) => {
     },
   );
 });
+
+// Validate email field to have only lowercase characters
+const contactForm = document.querySelector('#contact form');
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const emailField = contactForm.elements.email;
+
+  if (emailField.value === emailField.value.toLowerCase()) {
+    contactForm.submit();
+  } else {
+    const errorMessage = document.createElement('div');
+    errorMessage.classList.add('error-message');
+    errorMessage.innerText = 'Use lowercase for Email Address';
+
+    contactForm.insertBefore(
+      errorMessage,
+      contactForm.querySelector('.button'),
+    );
+  }
+});
