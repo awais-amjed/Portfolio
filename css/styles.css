@@ -558,6 +558,13 @@ textarea::placeholder {
   gap: 12px;
 }
 
+.error-message {
+  text-align: center;
+  color: #f8aa79;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #172b4d;
+}
+
 @media (min-width: 992px) {
   .card {
     flex-direction: row;
