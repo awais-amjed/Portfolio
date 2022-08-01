@@ -430,7 +430,6 @@ h3 {
 .languages-section {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   flex-basis: 50%;
 }
 
@@ -442,6 +441,22 @@ h3 {
   color: #172b4d;
   align-items: baseline;
   justify-content: space-between;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.list-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.active {
+  margin-bottom: 20px;
 }
 
 .list-heading h3 {

@@ -106,6 +106,51 @@ const works = [
   },
 ];
 
+const languages = [
+  {
+    name: 'Ruby',
+    icon: './images/languages/ruby.svg',
+  },
+  {
+    name: 'Dart',
+    icon: './images/languages/dart.svg',
+  },
+  {
+    name: 'JavaScript',
+    icon: './images/languages/javaScript.svg',
+  },
+  {
+    name: 'HTML5',
+    icon: './images/languages/html.svg',
+  },
+  {
+    name: 'CSS3',
+    icon: './images/languages/css.svg',
+  },
+  {
+    name: 'Python',
+    icon: './images/languages/python.svg',
+  },
+  {
+    name: 'Java',
+    icon: './images/languages/java.svg',
+  },
+];
+
+const frameworks = [
+  {
+    name: '',
+    icon: './images/frameworks/',
+  },
+];
+
+const skills = [
+  {
+    name: '',
+    icon: './images/skills/',
+  },
+];
+
 const worksSection = document.getElementById('portfolio');
 
 works.forEach((work) => {
@@ -189,6 +234,55 @@ works.forEach((work) => {
   );
 });
 
+const languagesSection = document.getElementById('languages');
+const frameworksSection = document.getElementById('frameworks');
+const skillsSection = document.getElementById('skills');
+
+languages.forEach((language) => {
+  languagesSection.innerHTML += `
+    <li>
+        <img src="${language.icon}" alt="${language.name} icon" height="50">
+        <p>${language.name}</p>
+    </li>
+  `;
+});
+
+frameworks.forEach((framework) => {
+  frameworksSection.innerHTML += `
+    <li>
+        <img src="${framework.icon}" alt="${framework.name} icon" height="50">
+        <p>${framework.name}</p>
+    </li>
+  `;
+});
+
+skills.forEach((skill) => {
+  skillsSection.innerHTML += `
+    <li>
+        <img src="${skill.icon}" alt="${skill.name} icon" height="50">
+        <p>${skill.name}</p>
+    </li>
+  `;
+});
+
+const coll = document.getElementsByClassName('list-heading');
+
+for (let i = 0; i < coll.length; i += 1) {
+  coll[i].addEventListener('click', function _() {
+    const icon = this.getElementsByClassName('fas')[0];
+    icon.classList.toggle('fa-chevron-down');
+    icon.classList.toggle('fa-chevron-right');
+
+    const content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = `${content.scrollHeight}px`;
+    }
+    content.classList.toggle('active');
+  });
+}
+
 // Validate email field to have only lowercase characters
 const contactForm = document.querySelector('#contact form');
 contactForm.addEventListener('submit', (event) => {
@@ -208,3 +302,4 @@ contactForm.addEventListener('submit', (event) => {
     );
   }
 });
+
