@@ -48,7 +48,7 @@ a {
 }
 
 .logo a {
-  font-family: 'Righteous', cursive !important;
+  font-family: 'Righteous', cursive;
   color: #6070ff;
   font-size: 40px;
 }
