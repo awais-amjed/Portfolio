@@ -139,15 +139,59 @@ const languages = [
 
 const frameworks = [
   {
-    name: '',
-    icon: './images/frameworks/',
+    name: 'React',
+    icon: './images/frameworks/react.svg',
+  },
+  {
+    name: 'Ruby on Rails',
+    icon: './images/frameworks/rails.svg',
+  },
+  {
+    name: 'PostgreSQL',
+    icon: './images/frameworks/postgresql.svg',
+  },
+  {
+    name: 'Flutter',
+    icon: './images/frameworks/flutter.svg',
+  },
+  {
+    name: 'Rspec',
+    icon: './images/frameworks/rspec.png',
+  },
+  {
+    name: 'Jest',
+    icon: './images/frameworks/jest.svg',
+  },
+  {
+    name: 'Firebase',
+    icon: './images/frameworks/firebase.svg',
+  },
+  {
+    name: 'Appwrite',
+    icon: './images/frameworks/appwriteio.svg',
   },
 ];
 
 const skills = [
   {
-    name: '',
-    icon: './images/skills/',
+    name: 'Pair-Programming',
+    icon: './images/skills/pair.png',
+  },
+  {
+    name: 'Remote Work',
+    icon: './images/skills/remote-work.png',
+  },
+  {
+    name: 'Team Work',
+    icon: './images/skills/teamwork.png',
+  },
+  {
+    name: 'Git',
+    icon: './images/skills/git.svg',
+  },
+  {
+    name: 'GitHub',
+    icon: './images/skills/github.svg',
   },
 ];
 
