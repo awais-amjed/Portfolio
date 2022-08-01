@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Righteous&display=swap');
+
 * {
   font-family: Poppins, sans-serif;
 }
@@ -45,6 +47,12 @@ a {
   text-decoration: none;
 }
 
+.logo a {
+  font-family: 'Righteous', cursive !important;
+  color: #6070ff;
+  font-size: 40px;
+}
+
 nav a:link,
 nav a:visited,
 nav a:hover,
@@ -88,11 +96,6 @@ nav li {
   font-weight: 500;
   background-color: transparent;
   font-size: 15px;
-}
-
-.logo {
-  color: #6070ff;
-  font-size: 18px;
 }
 
 .mobile-menu {
