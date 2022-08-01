@@ -538,10 +538,11 @@ textarea::placeholder {
   overflow-y: auto;
   margin: 0 5%;
   max-height: 90vh;
+  max-width: 90vw;
 }
 
 .popup-window-content img {
-  max-height: 40vh;
+  max-height: 50vh;
   object-fit: cover;
 }
 
