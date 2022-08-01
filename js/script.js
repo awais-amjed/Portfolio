@@ -32,10 +32,11 @@ const works = [
       role: 'React Module',
       year: '2022',
     },
+    backgroundColor: '#ffdead',
   },
   {
     name: 'Meow',
-    description: 'I love cats but don\'t have any so I thought why not make a webapp for cat breeds \\¶-¶/ I know right! Anyways I created this using ReactJS.',
+    description: 'I love cats but don\'t have any so I thought why not make a webapp for cat breeds \\¶-¶/ I know right! Anyways I created this using ReactJS. You can get to know about different breeds of Cats and their characteristics with beautiful images and a random fact.',
     imageURL: './images/projects/meow.png',
     technologies: ['React', 'SCSS', 'JavaScript', 'HTML5'],
     liveURL: 'https://awais-amjed-meow.netlify.app/',
@@ -45,6 +46,7 @@ const works = [
       role: 'React Module',
       year: '2022',
     },
+    backgroundColor: '#4369b2',
   },
   {
     name: 'Facebook 360',
@@ -58,6 +60,7 @@ const works = [
       role: 'React Module',
       year: '2022',
     },
+    backgroundColor: '',
   },
   {
     name: 'Multi-Post Stories',
@@ -71,6 +74,7 @@ const works = [
       role: 'React Module',
       year: '2022',
     },
+    backgroundColor: '',
   },
 ];
 
@@ -82,7 +86,7 @@ works.forEach((work) => {
   work.technologies.forEach((tech) => { techs += `<li class="tag">${tech}</li>`; });
 
   worksSection.innerHTML += `<div class="card">
-  <div class="project-image">
+  <div class="project-image" style="background-color: ${work.backgroundColor}">
       <img src="${work.imageURL}" alt="${work.name} Screenshot">
   </div>
   <div class="project-description">
