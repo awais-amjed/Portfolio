@@ -21,20 +21,30 @@ linksInMobileMenu.forEach((link) => {
 
 const works = [
   {
-    name: 'Tonic',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    imageURL: './images/work-1-snapshot.svg',
-    technologies: ['html', 'css', 'javaScript'],
-    liveURL: '#',
-    sourceURL: 'https://github.com/awais-amjed/',
+    name: 'Math Magicians',
+    description: 'Math Magicians is a Single Page Application (SPA) created in React that allows users to make simple calculations & Read some famous Math Quotes - with some witty gifs and a fun UI.',
+    imageURL: './images/projects/math-magicians.png',
+    technologies: ['React', 'SCSS', 'JavaScript', 'HTML5'],
+    liveURL: 'https://awais-amjed-math-magicians.netlify.app/',
+    sourceURL: 'https://github.com/awais-amjed/math-magicians',
+    details: {
+      organization: 'Microverse',
+      role: 'React Module',
+      year: '2022',
+    },
   },
   {
-    name: 'Uber Navigation',
-    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    imageURL: './images/work-2-snapshot.svg',
-    technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    liveURL: '#',
-    sourceURL: 'https://github.com/awais-amjed/',
+    name: 'Meow',
+    description: 'I love cats but don\'t have any so I thought why not make a webapp for cat breeds \\¶-¶/ I know right! Anyways I created this using ReactJS.',
+    imageURL: './images/projects/meow.png',
+    technologies: ['React', 'SCSS', 'JavaScript', 'HTML5'],
+    liveURL: 'https://awais-amjed-meow.netlify.app/',
+    sourceURL: 'https://github.com/awais-amjed/meow',
+    details: {
+      organization: 'Microverse',
+      role: 'React Module',
+      year: '2022',
+    },
   },
   {
     name: 'Facebook 360',
@@ -43,6 +53,11 @@ const works = [
     technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
     liveURL: '#',
     sourceURL: 'https://github.com/awais-amjed/',
+    details: {
+      organization: 'Microverse',
+      role: 'React Module',
+      year: '2022',
+    },
   },
   {
     name: 'Multi-Post Stories',
@@ -51,6 +66,11 @@ const works = [
     technologies: ['html', 'css', 'javaScript'],
     liveURL: '#',
     sourceURL: 'https://github.com/awais-amjed/',
+    details: {
+      organization: 'Microverse',
+      role: 'React Module',
+      year: '2022',
+    },
   },
 ];
 
@@ -118,8 +138,8 @@ works.forEach((work) => {
                             ${techs}
                         </ul>
                         <div class="button-wrapper">
-                            <a href="${work.liveURL}" class="alignment-start button">See Live <i class="fas fa-link"></i></a>
-                            <a href="${work.sourceURL}" class="alignment-start button">See Source <i class="fab fa-github"></i></a>
+                            <a href="${work.liveURL}" target="_blank" class="alignment-start button">See Live <i class="fas fa-link"></i></a>
+                            <a href="${work.sourceURL}" target="_blank" class="alignment-start button">See Source <i class="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
