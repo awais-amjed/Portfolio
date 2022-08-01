@@ -88,11 +88,11 @@ works.forEach((work) => {
   <div class="project-description">
       <h3>${work.name}</h3>
       <div class="project-details">
-          <p>CANOPY</p>
+          <p>${work.details.organization}</p>
           <p class="dot">&#x2B24;</p>
-          <p class="project-details-color">Back End Dev</p>
+          <p class="project-details-color">${work.details.role}</p>
           <p class="dot">&#x2B24;</p>
-          <p class="project-details-color">2015</p>
+          <p class="project-details-color">${work.details.year}</p>
       </div>
       <p>${work.description}</p>
       <ul class="tags-section">
@@ -121,11 +121,11 @@ works.forEach((work) => {
                     <div>
                         <h3>${work.name}</h3>
                         <div class="project-details">
-                            <p>FACEBOOK</p>
+                            <p>${work.details.organization}</p>
                             <p class="dot">&#x2B24;</p>
-                            <p class="project-details-color">Full Stack Dev</p>
+                            <p class="project-details-color">${work.details.role}</p>
                             <p class="dot">&#x2B24;</p>
-                            <p class="project-details-color">2015</p>
+                            <p class="project-details-color">${work.details.year}</p>
                         </div>
                     </div>
                     <a href="" id="popup-close-button"><i class="fas fa-times"></i></a>
