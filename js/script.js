@@ -46,7 +46,7 @@ const works = [
       role: 'React Capstone',
       year: '2022',
     },
-    backgroundColor: '#4369b2',
+    backgroundColor: '#528de1',
   },
   {
     name: 'Al Mentoria',
@@ -102,7 +102,7 @@ const works = [
       role: 'JavaScript Module',
       year: '2022',
     },
-    backgroundColor: '#eeeeee',
+    backgroundColor: '#00a1a9',
   },
 ];
 
