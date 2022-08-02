@@ -6,6 +6,7 @@
 
 ::-webkit-scrollbar {
   width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -465,7 +466,8 @@ h3 {
 
 .list-content {
   max-height: 0;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
   transition: max-height 0.2s ease-out;
   display: flex;
   flex-wrap: wrap;
@@ -686,7 +688,8 @@ textarea::placeholder {
   }
 
   .list-content {
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   .project-details {
