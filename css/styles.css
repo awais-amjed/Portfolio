@@ -557,8 +557,12 @@ textarea::placeholder {
 }
 
 #popup-window ::-webkit-scrollbar-track {
-  margin-block: 15px;
+  margin-block: 10px;
   background-color: transparent;
+}
+
+#popup-window ::-webkit-scrollbar-thumb {
+  border-radius: 3px;
 }
 
 .popup-window-content {
