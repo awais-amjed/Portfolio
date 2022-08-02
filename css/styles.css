@@ -561,8 +561,7 @@ textarea::placeholder {
 }
 
 .popup-window-content img {
-  max-height: 50vh;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 #popup-window .blended-background {
@@ -684,5 +683,6 @@ textarea::placeholder {
   .popup-window-content .project-description {
     padding: 0;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
