@@ -21,6 +21,20 @@ linksInMobileMenu.forEach((link) => {
 
 const works = [
   {
+    name: 'Al Mentoria',
+    description: 'Al-Mentoria is a place for new developers to reserve a meeting with a more experienced programmer as their mentor based on a chosen topic - with a Ruby on Rails backend.',
+    imageURL: './images/projects/al-mentoria.png',
+    technologies: ['React', 'Redux Toolkit', 'JavaScript', 'Tailwind CSS'],
+    liveURL: 'https://al-mentoria.herokuapp.com/',
+    sourceURL: 'https://github.com/UpliftLab/al-mentoria-frontend',
+    details: {
+      organization: 'Microverse',
+      role: 'Final Capstone',
+      year: '2022',
+    },
+    backgroundColor: '#97bd34',
+  },
+  {
     name: 'Math Magicians',
     description: 'Math Magicians is a Single Page Application (SPA) created in React that allows users to make simple calculations & Read some famous Math Quotes - with some witty gifs and a fun UI.',
     imageURL: './images/projects/math-magicians.png',
@@ -47,20 +61,6 @@ const works = [
       year: '2022',
     },
     backgroundColor: '#528de1',
-  },
-  {
-    name: 'Al Mentoria',
-    description: 'Al-Mentoria is a place for new developers to reserve a meeting with a more experienced programmer as their mentor based on a chosen topic - with a Ruby on Rails backend.',
-    imageURL: './images/projects/al-mentoria.png',
-    technologies: ['React', 'Redux Toolkit', 'JavaScript', 'Tailwind CSS'],
-    liveURL: 'https://al-mentoria.herokuapp.com/',
-    sourceURL: 'https://github.com/UpliftLab/al-mentoria-frontend',
-    details: {
-      organization: 'Microverse',
-      role: 'Final Capstone',
-      year: '2022',
-    },
-    backgroundColor: '#97bd34',
   },
   {
     name: 'Money Patrol',
@@ -346,4 +346,3 @@ contactForm.addEventListener('submit', (event) => {
     );
   }
 });
-
